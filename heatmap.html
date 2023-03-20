@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
-
     <!--Bootstrap-->
     <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
@@ -11,16 +10,18 @@
     crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!--Mapbox-->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <!--HighCharts-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <title>HeatMap</title>
 
     <style>
       body { margin: 0; padding: 0; }
-      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
     </style>
 
-    <title>Map</title>
   </head>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -30,18 +31,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                  <a href="#" class="nav-link">Map</a>
-              </li>
               <li class="nav-item">
-                  <a href="./heatmap.html" class="nav-link">HeatMap</a>
+                  <a href="./index.html" class="nav-link">Map</a>
+              </li>
+              <li class="nav-item active">
+                  <a href="#" class="nav-link">HeatMap</a>
               </li>
           </ul>
       </div>
     </nav>
   </header>
   <body>
-    <div id="map"></div>
-    <script src="index.js"></script>
+    <figure class="highcharts-figure">
+      <div id="container"></div>
+    </figure>
+    <script src="heatmap.js"></script>
   </body>
 </html>
