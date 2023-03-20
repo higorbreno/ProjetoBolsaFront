@@ -40,7 +40,7 @@ Promise.all([carregarMeses(), carregarPontos(), carregarEficiencias()]).then(() 
   Highcharts.chart('container', {
     chart: {
       type: 'heatmap',
-      marginTop: 90,
+      marginTop: 70,
       marginBottom: 35,
       plotBorderWidth: 1
     },
@@ -62,7 +62,7 @@ Promise.all([carregarMeses(), carregarPontos(), carregarEficiencias()]).then(() 
       layout: 'vertical',
       margin: 0,
       verticalAlign: 'top',
-      y: 73,
+      y: 70,
       symbolHeight: 280
     },
     tooltip: {
